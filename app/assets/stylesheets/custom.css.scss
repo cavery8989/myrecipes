@@ -44,9 +44,9 @@ body{
     text-align: center;
 }
 
-h1, h3, h4{
+h1,h2, h3, h4{
     
-    
+    line-height: 1;
 }
 
 h1{
@@ -57,7 +57,7 @@ h1{
 
 h2{
     font-size: 1.2em;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
     text-align: center;
     font-weight: normal;
     color: #777;
