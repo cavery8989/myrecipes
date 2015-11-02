@@ -1,1 +1,13 @@
+Testing specs for resipes.
 
+name :string
+summary :text
+description :text
+
+- Name must be present
+- Name must be between 5 and 100 characters
+- Summary must be present
+- Summary must be between 10 and 150 characters
+- Desctiption must be present 
+- Desctiption must be between 20 and 500 characters
+- Chef_id must be present 
