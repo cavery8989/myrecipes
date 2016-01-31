@@ -6,9 +6,9 @@
 
 <div class = "row">
   <div class = "col-md-4 pull-right center">
-    <%= gravatar_for @recipe.chef, size: 200 %>
+    <%= link_to gravatar_for(@recipe.chef, size: 200), chef_path(@recipe.chef) %>
     <p>
-      Brought to you by <b><%= @recipe.chef.name%></b>
+      Brought to you by <b><%= link_to @recipe.chef.name, chef_path(@recipe.chef)%></b>
     </p>
     
   </div>

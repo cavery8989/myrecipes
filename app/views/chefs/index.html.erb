@@ -1,0 +1,28 @@
+<%= render "shared/page_title", title: "All Chefs" %>
+   
+   <div class = "col-md-4 col-md-offset-4 center">
+    <%= will_paginate @chefs%>
+   </div>
+
+  <% @chefs.each do |chef| %>
+    <div class ="row">
+      
+        <div class = "col-md-4 col-md-offset-4 center">
+          <section class = "chef_info center">
+            <%= link_to gravatar_for(chef, size: 120), chef_path(chef) %>
+            <h5>Chef name: <%= link_to chef.name, chef_path(chef) %></h5>
+            
+            <span class = 'quiet' ><small>Joined: <%= time_ago_in_words(chef.created_at)%> ago, </small></span>
+            <span class = "quiet" ><small>Last contribuited: <%= time_ago_in_words(chef.updated_at)%> ago</small></span>
+          </section>
+        </div> 
+        
+       
+        
+      
+    </div>
+   <hr/>
+  <% end%>
+  
+  <%= will_paginate %>
+

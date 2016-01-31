@@ -1,0 +1,19 @@
+
+[1mFrom:[0m /home/ubuntu/workspace/app/controllers/logins_controller.rb @ line 16 LoginsController#create:
+
+     [1;34m7[0m: [32mdef[0m [1;34mcreate[0m
+     [1;34m8[0m: 
+     [1;34m9[0m:   chef = [1;34;4mChef[0m.find_by([35memail[0m: params[[33m:email[0m])
+    [1;34m10[0m:   [32mif[0m chef && chef.authenticate(params[[33m:passowrd[0m])
+    [1;34m11[0m:     session[[33m:chef_id[0m] = chef.id
+    [1;34m12[0m:     flash[[33m:success[0m] = [31m[1;31m"[0m[31mYou are logged in.[1;31m"[0m[31m[0m
+    [1;34m13[0m:     redirect_to recipes_path
+    [1;34m14[0m:     
+    [1;34m15[0m:   [32melse[0m
+ => [1;34m16[0m:    binding.pry
+    [1;34m17[0m:     flash.now[[33m:danger[0m] = [31m[1;31m"[0m[31mInvalid email or passowrd.[1;31m"[0m[31m[0m
+    [1;34m18[0m:     render [31m[1;31m"[0m[31mnew[1;31m"[0m[31m[0m
+    [1;34m19[0m:     
+    [1;34m20[0m:   [32mend[0m
+    [1;34m21[0m: [32mend[0m
+

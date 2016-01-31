@@ -3,7 +3,7 @@
     
     <h2>This is the home page for the rails course I'm doing. </h2>
     
-    <%= link_to "Sign up now!", "", class: "btn btn-lg btn-success" %>
+    <%= link_to "Sign up now!", "/register", class: "btn btn-lg btn-success" %>
 </div>
 
 <div class = "row">
@@ -17,10 +17,10 @@
     
     <div class ="col-lg-4">
         <h3 class = "midrow">
-            View Recipes As Guest User
+            Sign in to your account
         </h3>
-        <h2 class = "left">Browse and view recipes as guest and sign up later.</h2>
-        <p><%= link_to "Browse recipe listings", "", class: "btn btn-warning btn-small" %></p>
+        <h2 class = "left">Add/update your recipes, create reviews ect.</h2>
+        <p><%= link_to "login", login_path, class: "btn btn-warning btn-small" %></p>
     </div>
     
     <div class ="col-lg-4">
