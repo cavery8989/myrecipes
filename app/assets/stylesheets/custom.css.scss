@@ -1,6 +1,6 @@
 // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 
-$navbar-default-bg: #97694F;
+$navbar-default-bg: #75482d;
 $light-orange: #ff8c00;
 $navbar-default-color: $light-orange;
 
@@ -113,5 +113,24 @@ span.picture{
 .show_recipe{
     margin: 10px 10px 10px 10px;
 }
+
+.nav_button{
+    list-style-type: none;
+    margin-right: 5px;
+}
+
+
+
+.nav_pic{
+    margin-top: 14px;
+    margin-left: 3px;
+    
+}
+
+.butt{
+    margin-top: 60px;
+   
+}
+
 
 
