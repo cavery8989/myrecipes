@@ -18,7 +18,8 @@
       
         <div class = "col-md-4 col-md-offset-4 center">
           <section class = "chef_info center">
-            <%= link_to gravatar_for(chef, size: 220), chef_path(chef) %>
+            <%= link_to gravatar_for(chef, size: 220
+            ), chef_path(chef) %>
             <h5>Chef name: <%= link_to chef.name, chef_path(chef) %></h5>
             
             <span class = 'quiet' ><small>Joined: <%= time_ago_in_words(chef.created_at)%> ago, </small></span>
