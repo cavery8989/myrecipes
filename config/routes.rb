@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'battle/new'
+
   resources :recipes do
     member do
       post 'like'
